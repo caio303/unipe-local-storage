@@ -1,0 +1,44 @@
+body {
+    color: white;
+    background-color: #333;
+}
+td {
+    text-align: center;
+}
+
+#btn-cadastrar {
+    display: inline-block;
+    width: 8rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+#err-msg {
+    display: inline-block;
+    color: red;
+    padding: .2rem;
+    user-select: none;
+}
+
+#listagem {
+    display: flex;
+    justify-content: center;
+}
+#listagem>table {
+    min-width: 60rem;
+    
+}
+
+.del {
+    color: red;
+    padding: .3rem;
+    cursor: pointer;
+    user-select: none;
+}
+.del:hover {
+    filter: brightness(165%);
+}
+
+.campo {
+    padding-bottom: .5rem;
+}

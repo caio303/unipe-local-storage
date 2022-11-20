@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stl.css">
+    <title>Unipê Simulator</title>
+</head>
+<body>
+    <div id="cadastro">
+        <fieldset>
+            <legend>Cadastrar Aluno</legend>
+            <div class="campo">
+                <label for="nome">Nome: </label>
+                <input type="text" maxlength="80" id="nome">
+            </div>
+            <div class="campo">
+                <label for="mat">Matrícula</label>
+                <input type="text" maxlength="10" id="mat">
+            </div>
+            <div class="campo">
+                <label for="n1">Nota 1</label>
+                <input type="number" min="0" max="10" id="n1">
+            </div>
+            <div class="campo">
+                <label for="n2">Nota 2</label>
+                <input type="number" min="0" max="10" id="n2">
+            </div>
+            <div class="campo">
+                <label for="n3">Nota 3</label>
+                <input type="number" min="0" max="10" id="n3">
+            </div>
+            <div>
+                <button id="btn-cadastrar">Enviar</button>
+                <div id="err-msg"></div>
+            </div>
+        </fieldset>
+    </div>
+    <div id="listagem">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Aluno</th>
+                    <th>Matrícula</th>
+                    <th>Nota 1</th>
+                    <th>Nota 2</th>
+                    <th>Nota 3</th>
+                    <th>Média</th>
+                    <th><sub>Del</sub></th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+            <caption><b>Alunos UNIPÊ</b></caption>
+        </table>
+    </div>
+    <script src="./aluno.js" type="text/javascript"></script>
+    <script src="./script.js" type="text/javascript"></script>
+</body>
+</html>
