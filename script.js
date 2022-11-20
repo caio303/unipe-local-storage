@@ -34,7 +34,7 @@ const gerarTabelaAlunos = () => {
     }
     
     if(alunos.length === 0)
-        return tb.innerHTML = `<tr><td colspan="7" align="center">Nenhum aluno cadastrado</td></tr>`
+        return $("#tbody").innerHTML = `<tr><td colspan="7" align="center">Nenhum aluno cadastrado</td></tr>`
     
     let html=""
     for(let i=0;i<alunos.length;i++) {
